@@ -1,7 +1,5 @@
 import React from 'react';
 
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 import { useStyles } from '../style/portfolioStyle';
 import { Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
@@ -10,13 +8,13 @@ export default function Portfolio() {
   const classes = useStyles();
   return (
     <Box className={classes.sectionDark}>
-      <Grid container Id="Portfolio" className={classes.root}>
+      <Grid container className={classes.root}>
         <Grid item xs="12" sm="8">
           <Typography variant="h3">Portfolio</Typography>
         </Grid>
       </Grid>
       <Container maxWidth="xl">
-        <Grid container id="Portfolio" spacing={2}>
+        <Grid container spacing={2}>
           {itemData.map((item) => (
             <Grid item xs="6" sm="2" lg="3">
               <Box className={classes.imageContainer}>

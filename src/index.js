@@ -7,11 +7,15 @@ import App from './App';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#2962ff',
+      main: '#1e464a',
     },
     secondary: {
-      main: '#215259',
+      main: '#1e464a',
     },
+  },
+  colors: {
+    base1: '#0097a7',
+    base2: '#fff',
   },
 });
 ReactDOM.render(

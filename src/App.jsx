@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Main from './pages/resume/Main';
+import Home from './pages/resume/Home';
 function App() {
   return (
     <Fragment>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Fragment>
   );

@@ -1,54 +1,40 @@
-import * as React from 'react';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
+import React, { Fragment } from 'react';
+
+import Box from '@mui/material/Box';
+import Navbar from '../ui/Navbar';
 import { useStyles } from '../style/headerStyle';
-import {
-  AppBar,
-  Box,
-  IconButton,
-  Tab,
-  Tabs,
-  Toolbar,
-  Typography,
-} from '@mui/material';
-import TabPanel from '@mui/lab/TabPanel';
-import { TabContext } from '@mui/lab';
-import SwipeableViews from 'react-swipeable-views';
-import { useTheme } from '@mui/material/styles';
-import { MenuOpenRounded } from '@mui/icons-material';
-function ElevationScroll(props) {
-  const { children } = props;
 
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-  });
-
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  });
-}
+import { CssBaseline, Typography } from '@mui/material';
 
 const Header = () => {
   const classes = useStyles();
-
   return (
-    <React.Fragment>
-      <ElevationScroll>
-        <AppBar position="fixed">
-          <Toolbar>
-            <Typography variant="h4">Portfolio</Typography>
-
-            <Tabs className={classes.tabContainer}>
-              <Tab className={classes.tab} label="Home" Id="Home" />
-              <Tab className={classes.tab} label="About" Id="About" />
-              <Tab className={classes.tab} label="Resume" />
-              <Tab className={classes.tab} label="Portfolio" Id="Portfolio" />
-              <Tab className={classes.tab} label="Contact" />
-            </Tabs>
-          </Toolbar>
-        </AppBar>
-      </ElevationScroll>
-    </React.Fragment>
+    <Fragment>
+      <Navbar />
+      <Box
+        className={classes.photo}
+        sx={{
+          //bgcolor: '#cfe8fc',
+          height: '100vh',
+          width: '100%',
+          textAlign: 'center',
+          justifyContent: 'center',
+          display: 'flex',
+        }}
+      >
+        <CssBaseline />
+        <div className={classes.toolbarMargin} />
+        <Box sx={{ margin: 'auto', color: '#fff', fontWeight: '600' }}>
+          <Typography variant="h2" className={classes.name}>
+            I am Sumon Fakir
+          </Typography>
+          <Typography variant="h4" className={classes.title}>
+            Web Developer
+          </Typography>
+        </Box>
+      </Box>
+    </Fragment>
   );
 };
+
 export default Header;
