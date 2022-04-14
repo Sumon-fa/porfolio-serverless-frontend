@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
+import { useState } from 'react';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useStyles } from '../style/navStyle';
 import { AppBar, Tab, Tabs, Toolbar, Typography } from '@mui/material';
-
 function ElevationScroll(props) {
   const { children } = props;
 
@@ -18,6 +18,10 @@ function ElevationScroll(props) {
 
 const Navbar = () => {
   const classes = useStyles();
+  const [value, setValue] = useState(0);
+  function handleChange(e, value) {
+    setValue(value);
+  }
 
   return (
     <ElevationScroll>
@@ -27,12 +31,61 @@ const Navbar = () => {
             Portfolio
           </Typography>
 
-          <Tabs className={classes.tabContainer}>
-            <Tab className={classes.tab} label="Home" />
-            <Tab className={classes.tab} label="About" />
-            <Tab className={classes.tab} label="Resume" />
-            <Tab className={classes.tab} label="Portfolio" />
-            <Tab className={classes.tab} label="Contact" />
+          <Tabs
+            value={value}
+            className={classes.tabContainer}
+            onChange={handleChange}
+          >
+            <Tab
+              sx={{
+                fontFamily: 'Raleway',
+                textTransform: 'none',
+                color: '#fff',
+                fontWeight: 700,
+                fontSize: '1rem',
+              }}
+              label="Home"
+            />
+            <Tab
+              sx={{
+                fontFamily: 'Raleway',
+                textTransform: 'none',
+                color: '#fff',
+                fontWeight: 700,
+                fontSize: '1rem',
+              }}
+              label="About"
+            />
+            <Tab
+              sx={{
+                fontFamily: 'Raleway',
+                textTransform: 'none',
+                color: '#fff',
+                fontWeight: 700,
+                fontSize: '1rem',
+              }}
+              label="Resume"
+            />
+            <Tab
+              sx={{
+                fontFamily: 'Raleway',
+                textTransform: 'none',
+                color: '#fff',
+                fontWeight: 700,
+                fontSize: '1rem',
+              }}
+              label="Portfolio"
+            />
+            <Tab
+              sx={{
+                fontFamily: 'Raleway',
+                textTransform: 'none',
+                color: '#fff',
+                fontWeight: 700,
+                fontSize: '1rem',
+              }}
+              label="Contact"
+            />
           </Tabs>
         </Toolbar>
       </AppBar>

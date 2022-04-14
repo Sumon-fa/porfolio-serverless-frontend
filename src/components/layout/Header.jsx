@@ -5,31 +5,35 @@ import Navbar from '../ui/Navbar';
 import { useStyles } from '../style/headerStyle';
 
 import { CssBaseline, Typography } from '@mui/material';
+import Typed from 'react-typed';
 
 const Header = () => {
   const classes = useStyles();
   return (
     <Fragment>
       <Navbar />
-      <Box
-        className={classes.photo}
-        sx={{
-          //bgcolor: '#cfe8fc',
-          height: '100vh',
-          width: '100%',
-          textAlign: 'center',
-          justifyContent: 'center',
-          display: 'flex',
-        }}
-      >
+      <Box className={classes.photo}>
         <CssBaseline />
         <div className={classes.toolbarMargin} />
-        <Box sx={{ margin: 'auto', color: '#fff', fontWeight: '600' }}>
-          <Typography variant="h2" className={classes.name}>
+        <Box sx={{ margin: 'auto', color: '#fff' }}>
+          <Typography
+            variant="h3"
+            component="h4"
+            className={classes.headerTitle}
+          >
             I am Sumon Fakir
           </Typography>
-          <Typography variant="h4" className={classes.title}>
-            Web Developer
+          <Typography
+            variant="h4"
+            component="h5"
+            className={classes.headerContent}
+          >
+            <Typed
+              strings={['Web developer']}
+              typeSpeed={100}
+              backSpeed={80}
+              loop
+            />
           </Typography>
         </Box>
       </Box>
