@@ -7,10 +7,8 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
-import { useStyles } from '../style/contactStyle';
 
 const Contact = () => {
-  const classes = useStyles();
   return (
     <Card
       style={{
