@@ -29,15 +29,35 @@ const Resume = () => {
             <Timeline sx={{ height: '60vh', justifyContent: 'center' }}>
               <TimelineItem sx={{ height: '20vh' }}>
                 <TimelineSeparator>
-                  <TimelineDot className={classes.itemColor} />
-                  <TimelineConnector className={classes.itemColor} />
+                  <TimelineDot
+                    sx={{
+                      background: '#fff',
+                      border: '2px solid #1f5297',
+                      height: '16px',
+                      width: '16px',
+                    }}
+                  />
+                  <TimelineConnector sx={{ background: '#1f5297' }} />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography variant="h5">Education</Typography>
-                  <Typography variant="subtitle2">
+                  <Typography
+                    variant="h5"
+                    sx={{ fontFamily: '-webkit-body', marginBottom: '2px' }}
+                  >
+                    Education
+                  </Typography>
+                  <Typography
+                    sx={{ fontFamily: 'Raleway' }}
+                    variant="subtitle2"
+                  >
                     Business College Helsinki
                   </Typography>
-                  <Typography variant="subtitle2">2018-2019</Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ fontFamily: 'Raleway' }}
+                  >
+                    2018-2019
+                  </Typography>
                   <Typography variant="body2">
                     Vocational Qualification In ICT
                   </Typography>
@@ -45,8 +65,15 @@ const Resume = () => {
               </TimelineItem>
               <TimelineItem sx={{ height: '20vh' }}>
                 <TimelineSeparator>
-                  <TimelineDot className={classes.itemColor} />
-                  <TimelineConnector className={classes.itemColor} />
+                  <TimelineDot
+                    sx={{
+                      background: '#fff',
+                      border: '2px solid #1f5297',
+                      height: '16px',
+                      width: '16px',
+                    }}
+                  />
+                  <TimelineConnector sx={{ background: '#1f5297' }} />
                 </TimelineSeparator>
                 <TimelineContent>
                   <Typography variant="h5">Training</Typography>
@@ -63,8 +90,15 @@ const Resume = () => {
             <Timeline sx={{ height: '60vh', justifyContent: 'center' }}>
               <TimelineItem sx={{ height: '20vh' }}>
                 <TimelineSeparator>
-                  <TimelineDot className={classes.itemColor} />
-                  <TimelineConnector className={classes.itemColor} />
+                  <TimelineDot
+                    sx={{
+                      background: '#fff',
+                      border: '2px solid #1f5297',
+                      height: '16px',
+                      width: '16px',
+                    }}
+                  />
+                  <TimelineConnector sx={{ background: '#1f5297' }} />
                 </TimelineSeparator>
                 <TimelineContent>
                   <Typography variant="h5">Education</Typography>
@@ -79,8 +113,15 @@ const Resume = () => {
               </TimelineItem>
               <TimelineItem sx={{ height: '20vh' }}>
                 <TimelineSeparator>
-                  <TimelineDot className={classes.itemColor} />
-                  <TimelineConnector className={classes.itemColor} />
+                  <TimelineDot
+                    sx={{
+                      background: '#fff',
+                      border: '2px solid #1f5297',
+                      height: '16px',
+                      width: '16px',
+                    }}
+                  />
+                  <TimelineConnector sx={{ background: '#1f5297' }} />
                 </TimelineSeparator>
                 <TimelineContent>
                   <Typography variant="h5">Training</Typography>

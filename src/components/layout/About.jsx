@@ -8,7 +8,7 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  Typography,
+  Typography
 } from '@mui/material';
 import girl from '../../assets/girl.png';
 import EmailIcon from '@mui/icons-material/Email';
@@ -24,7 +24,8 @@ import { useDispatch, useSelector } from 'react-redux';
 const About = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const { isLoading, resumeData } = useSelector((state) => state.resume);
+  const { resumeData } = useSelector((state) => state.resume);
+
   useEffect(() => {
     dispatch(getResumeData());
   }, [dispatch]);
@@ -32,18 +33,13 @@ const About = () => {
   return (
     <Card className={classes.cardSection}>
       <CardContent>
-        <Typography
-          variant="h2"
-          component="h3"
-          className={classes.sectionTitle}
-        >
+        <Typography variant="h2" component="h3" className={classes.sectionTitle}>
           About
         </Typography>
         <Typography variant="body1" className={classes.cardBody1}>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+          quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+          suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
         </Typography>
 
         <Grid container spacing={4}>
@@ -55,14 +51,13 @@ const About = () => {
               Web Developer
             </Typography>
             <Typography variant="body2" className={classes.body2Height}>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+              quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+              impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
             </Typography>
             <Grid container spacing={5}>
               {resumeData.map((data, i) => (
-                <Fragment>
+                <Fragment key={i}>
                   <Grid item xs="6">
                     <List>
                       <ListItem>
@@ -71,7 +66,7 @@ const About = () => {
                             <EmailIcon className={classes.icon} />
                           </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary={`Email: ${data.email}`} />
+                        <ListItemText primary={data.email} />
                       </ListItem>
                       <ListItem>
                         <ListItemAvatar>
@@ -79,7 +74,7 @@ const About = () => {
                             <PhoneIphoneIcon className={classes.icon} />
                           </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary={`Phone: ${data.phone}`} />
+                        <ListItemText primary={data.phone} />
                       </ListItem>
                       <ListItem>
                         <ListItemAvatar>
@@ -87,7 +82,7 @@ const About = () => {
                             <GitHubIcon className={classes.icon} />
                           </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary={`Git-hub: ${data.github}`} />
+                        <ListItemText primary={data.github} />
                       </ListItem>
                     </List>
                   </Grid>
@@ -98,7 +93,7 @@ const About = () => {
                           <LinkedInIcon className={classes.icon} />
                         </Avatar>
                       </ListItemAvatar>
-                      <ListItemText primary={`Linkedin: ${data.linkedin}`} />
+                      <ListItemText primary={data.linkedin} />
                     </ListItem>
                     <ListItem>
                       <ListItemAvatar>
@@ -106,7 +101,7 @@ const About = () => {
                           <LocationCityIcon className={classes.icon} />
                         </Avatar>
                       </ListItemAvatar>
-                      <ListItemText primary={`City: ${data.city}`} />
+                      <ListItemText primary={data.city} />
                     </ListItem>
                     <ListItem>
                       <ListItemAvatar>
@@ -114,17 +109,16 @@ const About = () => {
                           <LanguageIcon className={classes.icon} />
                         </Avatar>
                       </ListItemAvatar>
-                      <ListItemText primary={`Website: ${data.website}`} />
+                      <ListItemText primary={data.website} />
                     </ListItem>
                   </Grid>
                 </Fragment>
               ))}
             </Grid>
             <Typography variant="body2" className={classes.body2Height}>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+              quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+              impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
             </Typography>
           </Grid>
         </Grid>

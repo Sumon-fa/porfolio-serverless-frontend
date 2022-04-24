@@ -12,9 +12,8 @@ const Header = () => {
   return (
     <Fragment>
       <Navbar />
+      <CssBaseline />
       <Box className={classes.photo}>
-        <CssBaseline />
-        <div className={classes.toolbarMargin} />
         <Box sx={{ margin: 'auto', color: '#fff' }}>
           <Typography
             variant="h3"

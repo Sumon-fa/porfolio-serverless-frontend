@@ -9,7 +9,4 @@ export const useStyles = makeStyles((theme) => ({
 
     marginBottom: '50px !important',
   },
-  itemColor: {
-    backgroundColor: '#FFF !important',
-  },
 }));

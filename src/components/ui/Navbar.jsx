@@ -3,6 +3,7 @@ import { useState } from 'react';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useStyles } from '../style/navStyle';
 import { AppBar, Tab, Tabs, Toolbar, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 function ElevationScroll(props) {
   const { children } = props;
 
@@ -55,6 +56,8 @@ const Navbar = () => {
                 fontSize: '1rem',
               }}
               label="About"
+              component={Link}
+              to="/about"
             />
             <Tab
               sx={{
@@ -85,6 +88,8 @@ const Navbar = () => {
                 fontSize: '1rem',
               }}
               label="Contact"
+              component={Link}
+              to="/contact"
             />
           </Tabs>
         </Toolbar>
