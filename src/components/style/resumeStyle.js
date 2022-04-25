@@ -1,5 +1,4 @@
 import { makeStyles } from '@mui/styles';
-import tree from '../../assets/tree.jpg';
 
 export const useStyles = makeStyles((theme) => ({
   cardSection: {
