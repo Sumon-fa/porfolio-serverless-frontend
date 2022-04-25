@@ -9,7 +9,6 @@ import {
 import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { useStyles } from '../style/resumeStyle';
-import tree from '../../assets/tree.jpg';
 
 const Resume = () => {
   const classes = useStyles();
