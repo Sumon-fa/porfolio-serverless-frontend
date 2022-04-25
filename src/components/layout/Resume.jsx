@@ -9,6 +9,7 @@ import {
 import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { useStyles } from '../style/resumeStyle';
+import tree from '../../assets/tree.jpg';
 
 const Resume = () => {
   const classes = useStyles();
@@ -23,7 +24,8 @@ const Resume = () => {
       >
         Resume
       </Typography>
-      <Container maxWidth="lg" sx={{ bgcolor: '#fff' }}>
+
+      <Container maxWidth="lg" sx={{ color: '#fff' }} className={classes.photo}>
         <Grid container>
           <Grid item lg="5" sm="12">
             <Timeline sx={{ height: '60vh', justifyContent: 'center' }}>
@@ -42,7 +44,7 @@ const Resume = () => {
                 <TimelineContent>
                   <Typography
                     variant="h5"
-                    sx={{ fontFamily: '-webkit-body', marginBottom: '2px' }}
+                    sx={{ fontFamily: '-webkit-body', marginBottom: '16px' }}
                   >
                     Education
                   </Typography>
@@ -76,9 +78,24 @@ const Resume = () => {
                   <TimelineConnector sx={{ background: '#1f5297' }} />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography variant="h5">Training</Typography>
-                  <Typography variant="subtitle2">BearIt Oy</Typography>
-                  <Typography variant="subtitle2">2022-Continue</Typography>
+                  <Typography
+                    variant="h5"
+                    sx={{ fontFamily: '-webkit-body', marginBottom: '16px' }}
+                  >
+                    Training
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ fontFamily: 'Raleway' }}
+                  >
+                    BearIt Oy
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ fontFamily: 'Raleway' }}
+                  >
+                    2022-Continue
+                  </Typography>
                   <Typography variant="body2">
                     Coding and Finnish Language
                   </Typography>
@@ -101,11 +118,24 @@ const Resume = () => {
                   <TimelineConnector sx={{ background: '#1f5297' }} />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography variant="h5">Education</Typography>
-                  <Typography variant="subtitle2">
+                  <Typography
+                    variant="h5"
+                    sx={{ fontFamily: '-webkit-body', marginBottom: '16px' }}
+                  >
+                    Education
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ fontFamily: 'Raleway' }}
+                  >
                     Business College Helsinki
                   </Typography>
-                  <Typography variant="subtitle2">2018-2019</Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ fontFamily: 'Raleway' }}
+                  >
+                    2018-2019
+                  </Typography>
                   <Typography variant="body2">
                     Vocational Qualification In ICT
                   </Typography>
@@ -124,9 +154,24 @@ const Resume = () => {
                   <TimelineConnector sx={{ background: '#1f5297' }} />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography variant="h5">Training</Typography>
-                  <Typography variant="subtitle2">BearIt Oy</Typography>
-                  <Typography variant="subtitle2">2022-Continue</Typography>
+                  <Typography
+                    variant="h5"
+                    sx={{ fontFamily: '-webkit-body', marginBottom: '16px' }}
+                  >
+                    Training
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ fontFamily: 'Raleway' }}
+                  >
+                    BearIt Oy
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ fontFamily: 'Raleway' }}
+                  >
+                    2022-Continue
+                  </Typography>
                   <Typography variant="body2">
                     Coding and Finnish Language
                   </Typography>

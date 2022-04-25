@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardContent,
@@ -6,16 +7,19 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
+import { useStyles } from '../style/contactStyle';
 import React from 'react';
 
 const Contact = () => {
+  const classes = useStyles();
   return (
     <Card
-      style={{
+      sx={{
         maxWidth: '450px',
         margin: '0 auto',
         padding: '20px 5px',
       }}
+      className={classes.section}
     >
       <CardContent>
         <Typography gutterBottom variant="h5">

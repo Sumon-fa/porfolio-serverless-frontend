@@ -36,6 +36,7 @@ const Navbar = () => {
             value={value}
             className={classes.tabContainer}
             onChange={handleChange}
+            textColor="#fff"
           >
             <Tab
               sx={{
