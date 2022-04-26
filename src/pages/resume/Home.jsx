@@ -14,8 +14,6 @@ const Home = () => {
         backgroundImage: `url(${walpaper})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-
-        backgroundColor: '#cccccc',
       }}
     >
       <Header />
