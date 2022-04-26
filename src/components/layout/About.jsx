@@ -8,9 +8,9 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  Typography
+  Typography,
 } from '@mui/material';
-import girl from '../../assets/girl.png';
+import sumon from '../../assets/sumon.jpg';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -33,27 +33,33 @@ const About = () => {
   return (
     <Card className={classes.cardSection}>
       <CardContent>
-        <Typography variant="h2" component="h3" className={classes.sectionTitle}>
+        <Typography
+          variant="h2"
+          component="h3"
+          className={classes.sectionTitle}
+        >
           About
         </Typography>
         <Typography variant="body1" className={classes.cardBody1}>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
-          quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
-          suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
         </Typography>
 
         <Grid container spacing={4}>
           <Grid item xs="4">
-            <img style={{ width: '100%' }} alt="sumon" src={girl} />
+            <img style={{ width: '100%' }} alt="sumon" src={sumon} />
           </Grid>
           <Grid item xs="8">
             <Typography variant="subtitle2" className={classes.subTitle1}>
               Web Developer
             </Typography>
             <Typography variant="body2" className={classes.body2Height}>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
-              quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
-              impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
             </Typography>
             <Grid container spacing={5}>
               {resumeData.map((data, i) => (
@@ -116,9 +122,10 @@ const About = () => {
               ))}
             </Grid>
             <Typography variant="body2" className={classes.body2Height}>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
-              quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
-              impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
             </Typography>
           </Grid>
         </Grid>
