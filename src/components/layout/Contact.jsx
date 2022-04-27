@@ -15,7 +15,8 @@ const Contact = () => {
     <Card
       sx={{
         maxWidth: '450px',
-        margin: '0 auto',
+        marginLeft: 'auto',
+        marginRight: 'auto',
         padding: '20px 5px',
       }}
       className={classes.section}

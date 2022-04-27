@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme) => ({
     alignContent: 'center',
   },
   sectionDark: {
-    padding: theme.spacing(10, 5, 10, 5),
+    padding: theme.spacing(10, 5, 0, 5),
   },
   responsiveImg: {
     width: '100%',
