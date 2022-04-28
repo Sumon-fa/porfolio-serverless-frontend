@@ -3,7 +3,7 @@ import { useState } from 'react';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useStyles } from '../style/navStyle';
 import { AppBar, Tab, Tabs, Toolbar, Typography } from '@mui/material';
-
+import { navData } from '../componentData/navData';
 function ElevationScroll(props) {
   const { children } = props;
 
@@ -26,9 +26,9 @@ const Navbar = () => {
 
   return (
     <ElevationScroll>
-      <AppBar position="fixed">
+      <AppBar position="fixed" color="secondary">
         <Toolbar>
-          <Typography variant="h2" component="h6">
+          <Typography variant="h2" component="h6" color="primary">
             Portfolio
           </Typography>
 
@@ -36,58 +36,22 @@ const Navbar = () => {
             value={value}
             className={classes.tabContainer}
             onChange={handleChange}
-            textColor="#fff"
+            indicatorColor="secondary"
           >
-            <Tab
-              sx={{
-                fontFamily: 'Raleway',
-                textTransform: 'none',
-                color: '#fff',
-                fontWeight: 700,
-                fontSize: '1rem',
-              }}
-              label="Home"
-            />
-            <Tab
-              sx={{
-                fontFamily: 'Raleway',
-                textTransform: 'none',
-                color: '#fff',
-                fontWeight: 700,
-                fontSize: '1rem',
-              }}
-              label="About"
-            />
-            <Tab
-              sx={{
-                fontFamily: 'Raleway',
-                textTransform: 'none',
-                color: '#fff',
-                fontWeight: 700,
-                fontSize: '1rem',
-              }}
-              label="Resume"
-            />
-            <Tab
-              sx={{
-                fontFamily: 'Raleway',
-                textTransform: 'none',
-                color: '#fff',
-                fontWeight: 700,
-                fontSize: '1rem',
-              }}
-              label="Portfolio"
-            />
-            <Tab
-              sx={{
-                fontFamily: 'Raleway',
-                textTransform: 'none',
-                color: '#fff',
-                fontWeight: 700,
-                fontSize: '1rem',
-              }}
-              label="Contact"
-            />
+            {navData.map((nav, i) => (
+              <Tab
+                sx={{
+                  fontFamily: 'Raleway ',
+                  textTransform: 'none',
+                  color: '#fff',
+                  fontWeight: 700,
+                  fontSize: '1rem',
+                }}
+                key={i}
+                className={classes.tab}
+                label={nav.label}
+              />
+            ))}
           </Tabs>
         </Toolbar>
       </AppBar>

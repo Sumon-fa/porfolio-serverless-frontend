@@ -17,10 +17,8 @@ export default function Portfolio() {
     <Box className={classes.sectionDark} id="Portfolio">
       <Typography
         variant="h2"
-        component="h4"
         color="secondary"
-        sx={{ textAlign: 'center' }}
-        className={classes.sectionTitle}
+        sx={{ textAlign: 'center', marginBottom: '50px' }}
       >
         Portfolio
       </Typography>

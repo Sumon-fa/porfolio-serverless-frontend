@@ -16,11 +16,4 @@ export const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: 'auto',
   },
-
-  sectionTitle: {
-    fontFamily: 'auto !important',
-    fontWeight: '400 !important',
-
-    marginBottom: '50px !important',
-  },
 }));
