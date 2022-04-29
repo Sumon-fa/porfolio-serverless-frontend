@@ -9,7 +9,11 @@ export default function Footer() {
   return (
     <BottomNavigation
       className={classes.photo}
-      sx={{ width: '100%', height: '200px', display: 'flex' }}
+      sx={{
+        width: '100%',
+        height: '200px',
+        display: 'flex',
+      }}
     >
       <Link
         sx={{

@@ -16,4 +16,10 @@ export const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: 'auto',
   },
+
+  hover: {
+    '&:hover': {
+      backgroundColor: 'rgb(7, 177, 77, 0.42)',
+    },
+  },
 }));
