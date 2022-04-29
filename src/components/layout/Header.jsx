@@ -13,7 +13,7 @@ const Header = () => {
     <Fragment>
       <Navbar />
       <CssBaseline />
-      <Box className={classes.photo}>
+      <Box className={classes.photo} id="home">
         <Box sx={{ margin: 'auto', color: '#fff' }}>
           <Typography
             variant="h3"

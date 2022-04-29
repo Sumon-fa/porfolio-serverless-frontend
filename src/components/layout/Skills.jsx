@@ -18,7 +18,7 @@ const Skills = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.cardSection}>
+    <Box className={classes.cardSection} id="skills">
       <Typography
         variant="h2"
         component="h4"

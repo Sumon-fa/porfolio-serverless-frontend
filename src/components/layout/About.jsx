@@ -1,26 +1,13 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import {
-  Avatar,
-  Grid,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography,
-} from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import sumon from '../../assets/sumon.jpg';
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import LocationCityIcon from '@mui/icons-material/LocationCity';
-import LanguageIcon from '@mui/icons-material/Language';
+
 import { useStyles } from '../style/aboutStyle';
 import { getResumeData } from '../../store/actions/headerActions';
 import { useDispatch, useSelector } from 'react-redux';
-
+import AboutItem from './AboutItem';
 const About = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
@@ -31,7 +18,7 @@ const About = () => {
   }, [dispatch]);
 
   return (
-    <Card className={classes.cardSection}>
+    <Card className={classes.cardSection} id="about">
       <CardContent>
         <Typography
           variant="h2"
@@ -41,91 +28,52 @@ const About = () => {
           About
         </Typography>
         <Typography variant="body1" className={classes.cardBody1}>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
+          I am Sumon Fakir born and raised in Dhaka, Bangladesh. I have been
+          living in Finland for four years. I have completed my vocational
+          degree in ICT from Business College Helsinki. As a person I am quiet
+          and calm. The most important things that I have patience and
+          dedication as well. In my free time, I enjoy spending time with
+          friends, like to play chess and watching football. One thing that I
+          like most in Finland is Rkioski’s coffee.
         </Typography>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={1}>
           <Grid item xs="4">
-            <img style={{ width: '100%' }} alt="sumon" src={sumon} />
+            <img
+              style={{ maxWidth: '100%', maxHeight: '350px' }}
+              alt="sumon"
+              src={sumon}
+            />
           </Grid>
           <Grid item xs="8">
             <Typography variant="subtitle2" className={classes.subTitle1}>
               Web Developer
             </Typography>
             <Typography variant="body2" className={classes.body2Height}>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              My core compenteces are React with Redux and Redux-toolkit, NodeJs
+              , MongoDB, CDK with cloud formation, AWS Lamda and DynamoDB. I
+              have completed several tasks with these languages and framework.
+              However, I have also good understanding in Devops.
             </Typography>
             <Grid container spacing={5}>
               {resumeData.map((data, i) => (
-                <Fragment key={i}>
-                  <Grid item xs="6">
-                    <List>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar className={classes.bgcolor}>
-                            <EmailIcon className={classes.icon} />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary={data.email} />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar className={classes.bgcolor}>
-                            <PhoneIphoneIcon className={classes.icon} />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary={data.phone} />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar className={classes.bgcolor}>
-                            <GitHubIcon className={classes.icon} />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary={data.github} />
-                      </ListItem>
-                    </List>
-                  </Grid>
-                  <Grid item xs="6">
-                    <ListItem>
-                      <ListItemAvatar>
-                        <Avatar className={classes.bgcolor}>
-                          <LinkedInIcon className={classes.icon} />
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText primary={data.linkedin} />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemAvatar>
-                        <Avatar className={classes.bgcolor}>
-                          <LocationCityIcon className={classes.icon} />
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText primary={data.city} />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemAvatar>
-                        <Avatar className={classes.bgcolor}>
-                          <LanguageIcon className={classes.icon} />
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText primary={data.website} />
-                    </ListItem>
-                  </Grid>
-                </Fragment>
+                <AboutItem
+                  key={i}
+                  email={data.email}
+                  github={data.github.slice(0, 18)}
+                  linkedin={data.linkedin.slice(0, 24)}
+                  city={data.city}
+                  phone={data.phone}
+                  website={data.website}
+                />
               ))}
             </Grid>
             <Typography variant="body2" className={classes.body2Height}>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              I have more than 2 years of experience as a web developer. I have
+              advanced knowledge of React with Redux and Redux-toolkit, Node,
+              AWS lambda and CSS and with outstanding passion and dedication as
+              well. I have worked hard, now I am ready to implement my knowledge
+              into practice.
             </Typography>
           </Grid>
         </Grid>

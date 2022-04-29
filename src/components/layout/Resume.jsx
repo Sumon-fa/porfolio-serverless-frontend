@@ -13,7 +13,7 @@ import { useStyles } from '../style/resumeStyle';
 const Resume = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.cardSection}>
+    <Box className={classes.cardSection} id="resume">
       <Typography
         variant="h2"
         component="h4"

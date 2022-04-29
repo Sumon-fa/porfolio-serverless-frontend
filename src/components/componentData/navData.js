@@ -1,22 +1,23 @@
 export const navData = [
   {
     label: 'Home',
-    id: 'home',
+    id: '#home',
   },
   {
     label: 'About',
-    id: 'about',
-  },
-  {
-    label: 'Resume',
-    id: 'resume',
+    id: '#about',
   },
   {
     label: 'Skills',
-    id: 'skill',
+    id: '#skills',
   },
   {
+    label: 'Resume',
+    id: '#resume',
+  },
+
+  {
     label: 'Portfolio',
-    id: 'portfolio',
+    id: '#portfolio',
   },
 ];

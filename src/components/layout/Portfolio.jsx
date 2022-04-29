@@ -14,7 +14,7 @@ import { Box } from '@mui/system';
 export default function Portfolio() {
   const classes = useStyles();
   return (
-    <Box className={classes.sectionDark} id="Portfolio">
+    <Box className={classes.sectionDark} id="portfolio">
       <Typography
         variant="h2"
         color="secondary"

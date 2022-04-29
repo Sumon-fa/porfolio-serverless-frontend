@@ -28,8 +28,17 @@ const Navbar = () => {
     <ElevationScroll>
       <AppBar position="fixed" color="secondary">
         <Toolbar>
-          <Typography variant="h2" component="h6" color="primary">
-            Portfolio
+          <Typography
+            variant="h4"
+            color="primary"
+            sx={{
+              fontSize: '2.5',
+              marginLeft: '110px',
+              fontWeight: 'lighter',
+              fontFamily: 'Quicksand',
+            }}
+          >
+            Sumon Fakir
           </Typography>
 
           <Tabs
@@ -48,7 +57,7 @@ const Navbar = () => {
                   fontSize: '1rem',
                 }}
                 key={i}
-                className={classes.tab}
+                href={nav.id}
                 label={nav.label}
               />
             ))}
