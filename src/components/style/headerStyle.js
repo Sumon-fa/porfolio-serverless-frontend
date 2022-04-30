@@ -31,4 +31,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: '1.5rem !important',
     },
   },
+  defaultPadding: {
+    padding: '0px !important',
+  },
 }));

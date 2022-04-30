@@ -10,8 +10,6 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: '50px !important',
   },
   photo: {
-    backgroundImage: `linear-gradient(to bottom right,#04303140,#00606473),url("https://cdn-techno.konbini.com/fr/files/2021/04/fond-noir.jpg")`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundColor: 'black',
   },
 }));
