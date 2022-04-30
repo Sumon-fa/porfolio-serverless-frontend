@@ -15,11 +15,18 @@ export const useStyles = makeStyles((theme) => ({
   responsiveImg: {
     width: '100%',
     height: 'auto',
+    display: 'block',
+    transition: '200ms ease-in-out',
   },
-
-  hover: {
+  content: {
+    position: 'absolute',
+    inset: '0',
+    color: '#000',
+    backgroundColor: 'rgba(255,255,255,.4)',
+    transition: '200ms ease-in-out',
+    opacity: 0,
     '&:hover': {
-      backgroundColor: 'rgb(7, 177, 77, 0.42)',
+      opacity: 1,
     },
   },
 }));

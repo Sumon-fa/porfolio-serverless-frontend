@@ -28,35 +28,31 @@ export default function Portfolio() {
         <Grid container spacing={2}>
           {projectData.map((item, i) => (
             <Grid item xs={6} sm={6} lg={4} key={i}>
-              <Link
-                rel="noreferrer"
-                target="_blank"
-                href={item.url}
-                className={classes.hover}
-              >
+              <Link rel="noreferrer" target="_blank" href={item.url}>
                 <ImageListItem
-                  className={classes.responsiveImg}
                   target="_blank"
+                  className={classes.imageContainer}
                 >
                   <img
+                    className={classes.responsiveImg}
                     src={item.img}
                     srcSet={item.img}
                     alt={item.title}
                     loading="lazy"
-                    variant="outlined"
                   />
                   <ImageListItemBar
                     title={item.title}
                     subtitle={item.author}
                     actionIcon={
                       <IconButton
-                        sx={{ color: 'rgb(39 28 28 / 50%)' }}
+                        sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                         aria-label={`info about ${item.title}`}
                       >
                         <InfoIcon />
                       </IconButton>
                     }
                   />
+                  <div className={classes.content}></div>
                 </ImageListItem>
               </Link>
             </Grid>
