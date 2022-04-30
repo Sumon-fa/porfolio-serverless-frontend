@@ -28,9 +28,14 @@ const Skills = () => {
       >
         Skills
       </Typography>
-      <Grid container spacing={6} sx={{ justifyContent: 'center' }}>
-        <Grid item>
-          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
+      <Grid
+        container
+        rowSpacing={2}
+        columnSpacing={{ xs: 1, sm: 2, md: 6 }}
+        sx={{ justifyContent: 'center' }}
+      >
+        <Grid item xs={12} sm={6} md={4} lg={2}>
+          <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>HTML-CSS-JS</Typography>
             </CardContent>
@@ -38,12 +43,13 @@ const Skills = () => {
               component="img"
               height="140"
               image={htmlcssjs}
+              style={{ objectFit: 'contain' }}
               alt="html"
             />
           </Card>
         </Grid>
-        <Grid item>
-          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
+        <Grid item xs={12} sm={6} md={4} lg={2}>
+          <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>REACT-REDUX</Typography>
             </CardContent>
@@ -56,8 +62,8 @@ const Skills = () => {
             />
           </Card>
         </Grid>
-        <Grid item>
-          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
+        <Grid item xs={12} sm={6} md={4} lg={2}>
+          <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>
                 AWS LAMDA-AWS CLOUD
@@ -72,10 +78,12 @@ const Skills = () => {
             />
           </Card>
         </Grid>
-        <Grid item>
-          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
+        <Grid item xs={12} sm={6} md={4} lg={2}>
+          <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
-              <Typography sx={{ marginBottom: '2rem' }}>NodeJs</Typography>
+              <Typography sx={{ marginBottom: '2rem' }}>
+                NodeJs{'  '}{' '}
+              </Typography>
             </CardContent>
             <CardMedia
               sx={{
@@ -90,8 +98,8 @@ const Skills = () => {
             />
           </Card>
         </Grid>
-        <Grid item>
-          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
+        <Grid item xs={12} sm={6} md={4} lg={2}>
+          <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>
                 MONGODB-DYNAMODB
