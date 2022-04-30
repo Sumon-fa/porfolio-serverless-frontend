@@ -4,7 +4,6 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useStyles } from '../style/navStyle';
 import {
   AppBar,
-  Divider,
   IconButton,
   List,
   ListItem,
@@ -20,7 +19,6 @@ import { useTheme } from '@mui/styles';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { Menu } from '@mui/icons-material';
 import { Link } from '@mui/material';
-import { textAlign } from '@mui/system';
 
 function ElevationScroll(props) {
   const { children } = props;
