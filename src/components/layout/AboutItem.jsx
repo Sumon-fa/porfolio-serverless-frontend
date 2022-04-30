@@ -20,7 +20,7 @@ const AboutItem = (props) => {
   const classes = useStyles();
   return (
     <Fragment>
-      <Grid item xs="6">
+      <Grid item xs="12" md="6">
         <List>
           <ListItem>
             <ListItemAvatar>
@@ -56,7 +56,7 @@ const AboutItem = (props) => {
           </ListItem>
         </List>
       </Grid>
-      <Grid item xs="6">
+      <Grid item xs="12" md="6">
         <ListItem>
           <ListItemAvatar>
             <Avatar className={classes.bgcolor}>
