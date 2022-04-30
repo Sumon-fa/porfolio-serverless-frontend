@@ -28,9 +28,9 @@ const Skills = () => {
       >
         Skills
       </Typography>
-      <Grid container spacing={6}>
+      <Grid container spacing={6} sx={{ justifyContent: 'center' }}>
         <Grid item>
-          <Card sx={{ minWidth: 200, minHeight: 300, textAlign: 'center' }}>
+          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>HTML-CSS-JS</Typography>
             </CardContent>
@@ -38,12 +38,12 @@ const Skills = () => {
               component="img"
               height="140"
               image={htmlcssjs}
-              alt="green iguana"
+              alt="html"
             />
           </Card>
         </Grid>
         <Grid item>
-          <Card sx={{ minWidth: 200, minHeight: 300, textAlign: 'center' }}>
+          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>REACT-REDUX</Typography>
             </CardContent>
@@ -52,26 +52,28 @@ const Skills = () => {
               height="140"
               image={react}
               style={{ objectFit: 'contain' }}
-              alt="green iguana"
+              alt="react"
             />
           </Card>
         </Grid>
         <Grid item>
-          <Card sx={{ minWidth: 200, minHeight: 300, textAlign: 'center' }}>
+          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
             <CardContent>
-              <Typography sx={{ marginBottom: '2rem' }}>AWS LAMDA</Typography>
+              <Typography sx={{ marginBottom: '2rem' }}>
+                AWS LAMDA-AWS CLOUD
+              </Typography>
             </CardContent>
             <CardMedia
               component="img"
               height="140"
               image={lambda}
               style={{ objectFit: 'contain' }}
-              alt="green iguana"
+              alt="aws"
             />
           </Card>
         </Grid>
         <Grid item>
-          <Card sx={{ minWidth: 200, minHeight: 300, textAlign: 'center' }}>
+          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>NodeJs</Typography>
             </CardContent>
@@ -84,21 +86,23 @@ const Skills = () => {
               component="img"
               height="140"
               image={nodejs}
-              alt="green iguana"
+              alt="node"
             />
           </Card>
         </Grid>
         <Grid item>
-          <Card sx={{ minWidth: 200, minHeight: 300, textAlign: 'center' }}>
+          <Card sx={{ minWidth: 220, minHeight: 300, textAlign: 'center' }}>
             <CardContent>
-              <Typography sx={{ marginBottom: '2rem' }}>MONGODB</Typography>
+              <Typography sx={{ marginBottom: '2rem' }}>
+                MONGODB-DYNAMODB
+              </Typography>
             </CardContent>
             <CardMedia
               component="img"
               height="140"
               image={mongodb}
               style={{ objectFit: 'contain' }}
-              alt="green iguana"
+              alt="mongodb"
             />
           </Card>
         </Grid>

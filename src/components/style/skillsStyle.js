@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 export const useStyles = makeStyles((theme) => ({
   cardSection: {
-    margin: theme.spacing(10, 10, 0, 10),
+    margin: theme.spacing(10, 0, 10, 0),
   },
   sectionTitle: {
     fontFamily: 'auto !important',

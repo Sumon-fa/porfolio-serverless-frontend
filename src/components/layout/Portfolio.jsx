@@ -27,7 +27,7 @@ export default function Portfolio() {
       <Container maxWidth="xl">
         <Grid container spacing={2}>
           {projectData.map((item, i) => (
-            <Grid item xs={6} sm={6} lg={4} key={i}>
+            <Grid item xs={12} sm={6} md={4} lg={4} key={i}>
               <Link rel="noreferrer" target="_blank" href={item.url}>
                 <ImageListItem
                   target="_blank"
