@@ -12,15 +12,23 @@ import {
 } from '@mui/material';
 import { Box } from '@mui/system';
 import { projectData } from '../componentData/portfolioData';
+import { useTheme } from '@mui/styles';
 
 export default function Portfolio() {
+  const theme = useTheme();
   const classes = useStyles();
   return (
     <Box className={classes.sectionDark} id="portfolio">
       <Typography
         variant="h2"
         color="secondary"
-        sx={{ textAlign: 'center', marginBottom: '50px' }}
+        sx={{
+          textAlign: 'center',
+          marginBottom: '50px',
+          [theme.breakpoints.down('md')]: {
+            fontSize: '3rem',
+          },
+        }}
       >
         Portfolio
       </Typography>

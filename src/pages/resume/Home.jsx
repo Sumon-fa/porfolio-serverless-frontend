@@ -7,6 +7,8 @@ import walpaper from '../../assets/walpaper.jpg';
 import Skills from '../../components/layout/Skills';
 import Footer from '../../components/layout/Footer';
 import Portfolio from '../../components/layout/Portfolio';
+import Experience from '../../components/layout/Experience';
+
 const Home = () => {
   return (
     <div
@@ -20,6 +22,7 @@ const Home = () => {
       <About />
       <Skills />
       <Resume />
+      <Experience />
       <Portfolio />
       <Footer />
     </div>

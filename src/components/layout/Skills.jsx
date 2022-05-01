@@ -13,9 +13,11 @@ import react from '../../assets/react.png';
 import nodejs from '../../assets/nodejs.svg';
 import lambda from '../../assets/Lambda.png';
 import mongodb from '../../assets/mongodb.png';
+import { useTheme } from '@emotion/react';
 
 const Skills = () => {
   const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <Box className={classes.cardSection} id="skills">
@@ -23,7 +25,12 @@ const Skills = () => {
         variant="h2"
         component="h4"
         color="secondary"
-        sx={{ textAlign: 'center' }}
+        sx={{
+          textAlign: 'center',
+          [theme.breakpoints.down('md')]: {
+            fontSize: '3rem',
+          },
+        }}
         className={classes.sectionTitle}
       >
         Skills
@@ -32,7 +39,12 @@ const Skills = () => {
         container
         rowSpacing={2}
         columnSpacing={{ xs: 1, sm: 2, md: 6 }}
-        sx={{ justifyContent: 'center' }}
+        sx={{
+          justifyContent: 'center',
+          [theme.breakpoints.down('md')]: {
+            fontSize: '3rem',
+          },
+        }}
       >
         <Grid item xs={12} sm={6} md={4} lg={2}>
           <Card sx={{ minHeight: 300, textAlign: 'center' }}>

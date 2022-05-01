@@ -36,6 +36,11 @@ const About = () => {
         <Typography
           variant="h2"
           component="h3"
+          sx={{
+            [theme.breakpoints.down('md')]: {
+              fontSize: '3rem',
+            },
+          }}
           className={classes.sectionTitle}
         >
           About

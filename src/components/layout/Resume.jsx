@@ -100,7 +100,12 @@ const Resume = () => {
         variant="h2"
         component="h4"
         color="secondary"
-        sx={{ textAlign: 'center' }}
+        sx={{
+          textAlign: 'center',
+          [theme.breakpoints.down('md')]: {
+            fontSize: '3rem',
+          },
+        }}
         className={classes.sectionTitle}
       >
         Resume
