@@ -115,11 +115,8 @@ const Resume = () => {
                 justifyContent: 'center',
                 textAlign: 'center',
                 [theme.breakpoints.down('md')]: {
-                  marginBottom: '-21px',
-                  marginTop: '-21px',
-                  root: {
-                    padding: '0px',
-                  },
+                  height: '50vh',
+                  paddingLeft: '30px',
                 },
               }}
             >
