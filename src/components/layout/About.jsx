@@ -51,8 +51,7 @@ const About = () => {
           degree in ICT from Business College Helsinki. As a person I am quiet
           and calm. The most important things that I have patience and
           dedication as well. In my free time, I enjoy spending time with
-          friends, like to play chess and watching football. One thing that I
-          like most in Finland is Rkioski’s coffee.
+          friends, like to play chess and watching football.
         </Typography>
 
         <Grid container spacing={1}>

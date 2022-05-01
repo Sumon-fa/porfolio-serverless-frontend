@@ -28,7 +28,15 @@ const AboutItem = (props) => {
                 <EmailIcon className={classes.icon} />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary={props.email} />
+            <ListItemText>
+              <Link
+                color="secondary"
+                underline="none"
+                href="mailto:fakrsumon78@gmail.com"
+              >
+                {props.email}
+              </Link>
+            </ListItemText>
           </ListItem>
           <ListItem>
             <ListItemAvatar>
