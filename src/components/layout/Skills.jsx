@@ -37,17 +37,23 @@ const Skills = () => {
       </Typography>
       <Grid
         container
-        rowSpacing={2}
+        rowSpacing={{ xs: 1, sm: 2 }}
         columnSpacing={{ xs: 1, sm: 2, md: 6 }}
         sx={{
           justifyContent: 'center',
           [theme.breakpoints.down('md')]: {
             fontSize: '3rem',
+            justifyContent: 'left',
           },
         }}
       >
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Card sx={{ minHeight: 300, textAlign: 'center' }}>
+        <Grid item xs={6} sm={6} md={4} lg={2}>
+          <Card
+            sx={{
+              minHeight: 300,
+              textAlign: 'center',
+            }}
+          >
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>HTML-CSS-JS</Typography>
             </CardContent>
@@ -60,8 +66,13 @@ const Skills = () => {
             />
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Card sx={{ minHeight: 300, textAlign: 'center' }}>
+        <Grid item xs={6} sm={6} md={4} lg={2}>
+          <Card
+            sx={{
+              minHeight: 300,
+              textAlign: 'center',
+            }}
+          >
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>REACT-REDUX</Typography>
             </CardContent>
@@ -74,7 +85,7 @@ const Skills = () => {
             />
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
+        <Grid item xs={6} sm={6} md={4} lg={2}>
           <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>
@@ -90,7 +101,7 @@ const Skills = () => {
             />
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
+        <Grid item xs={6} sm={6} md={4} lg={2}>
           <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>
@@ -110,7 +121,7 @@ const Skills = () => {
             />
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
+        <Grid item xs={6} sm={6} md={4} lg={2}>
           <Card sx={{ minHeight: 300, textAlign: 'center' }}>
             <CardContent>
               <Typography sx={{ marginBottom: '2rem' }}>
