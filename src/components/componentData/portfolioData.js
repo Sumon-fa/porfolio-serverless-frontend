@@ -1,6 +1,6 @@
 export const projectData = [
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: require('../../assets/food-order.jpg'),
     title: 'Food-Order-App',
     rows: 2,
     cols: 2,
@@ -8,29 +8,29 @@ export const projectData = [
     url: ' https://react-http-e353e.firebaseapp.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    img: require('../../assets/redux-cart.jpg'),
     title: 'Redux-Cart',
     url: 'https://demo-redux-cart.netlify.app/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    img: require('../../assets/bigshop.jpg'),
     title: 'BigShop',
     url: ' https://bigshopdummy.herokuapp.com/',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+    img: require('../../assets/keeper.jpg'),
     title: 'Keeper-App',
     url: 'https://keeper-app-staging.herokuapp.com/',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+    img: require('../../assets/ci.jpg'),
     title: 'CI-CD',
     url: 'https://pokefullstackopencicd.herokuapp.com/',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+    img: require('../../assets/website.jpg'),
     title: 'Website',
     url: 'http://cdkportfolio.s3-website-eu-west-1.amazonaws.com/',
     rows: 2,
@@ -38,3 +38,4 @@ export const projectData = [
     featured: true,
   },
 ];
+console.log(projectData[0].img);
