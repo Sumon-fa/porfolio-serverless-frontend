@@ -38,4 +38,3 @@ export const projectData = [
     featured: true,
   },
 ];
-console.log(projectData[0].img);

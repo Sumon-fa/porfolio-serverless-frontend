@@ -13,7 +13,7 @@ export const getResumeData = () => async (dispatch) => {
     const { data } = await axios.get(
       'https://ffg2t3gh29.execute-api.eu-west-1.amazonaws.com/prod/resume'
     );
-    console.log(data);
+
     dispatch({
       type: RESUME_DATA_SUCCESS,
       payload: data,
